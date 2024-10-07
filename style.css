@@ -1,0 +1,100 @@
+.header {
+    width:100%; 
+    background-color:#a0a0a0; 
+    padding: 0px; 
+    height:120px;
+    border-radius: 0px 10px 10px;
+}
+.header img {
+    float:left; 
+    margin:10px;
+     width:100px; 
+    height:100px;
+    border-radius: 10px;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: right;
+    border-radius: 0 0 0 10px;
+}
+.header li {
+    display: inline-block;
+}
+.header a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .header a:hover {
+    
+    background-color: #111;
+}
+table {
+    
+    margin: 10px auto;
+    width: 100%;
+    max-width: 960px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Объединение ячеек */
+.merged {
+    text-align: center;
+    background-color: #ccc;
+}
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    margin: 10px auto;
+    max-width: 960px;
+    padding: 10px;
+    background-color: #333;
+}
+form li {
+    margin: 1px;
+}
+.hyp {
+    max-width: 960px;
+    
+    padding: 20px;
+    background-color: #fff1f1;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.footer {
+    
+    width:100%; 
+    background-color:#a0a0a0; 
+    padding: 10px; 
+    height:120px;
+}
+.footer p {
+    
+    text-align: center;
+} 
