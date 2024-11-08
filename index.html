@@ -1,174 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
     <link rel="stylesheet" href="style.css">
-    <title>SPASS_vnutr</title>
 </head>
 <body>
-<header class="header">
-  <div class="logo"><img src="image.png" alt="Лого"/></div>
-  <div class="site-name">Соленый имбирь</div>
-  <nav class="nav">
-    <a href="#">Главная</a>
-    <a href="#">О нас</a>
-    <a href="#">Контакты</a>
-  </nav>
-</header>
-<main class="content">
-  <section class="table">
-    <table>
-      <thead>
-          <tr>
-              <th class="merged" colspan="2">Personal Info</th>
-              <th class="merged" colspan="2">Job Details</th>
-          </tr>
-          <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Occupation</th>
-              <th>City</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>John Smith</td>
-              <td>28</td>
-              <td>Software Developer</td>
-              <td>New York</td>
-          </tr>
-          <tr>
-              <td>Jane Doe</td>
-              <td>34</td>
-              <td>Graphic Designer</td>
-              <td>Los Angeles</td>
-          </tr>
-          <tr>
-              <td>Michael Lee</td>
-              <td>22</td>
-              <td>Data Analyst</td>
-              <td>San Francisco</td>
-          </tr>
-          <tr>
-              <td>Sarah Brown</td>
-              <td>30</td>
-              <td>Marketing Manager</td>
-              <td>Seattle</td>
-          </tr>
-          <tr>
-              <td>Paul Johnson</td>
-              <td>40</td>
-              <td>Financial Advisor</td>
-              <td>Miami</td>
-          </tr>
-          <tr>
-              <td>Emily Davis</td>
-              <td>25</td>
-              <td>Content Writer</td>
-              <td>Boston</td>
-          </tr>
-      </tbody>
-  </table>
-  </section>
-  <section class="links"><h2 id = "t1">Список гиперссылок</h2>
-    <ul>
-      <li><a href="http://kubsu.ru/?ysclid=m0usro7hg212314871">абсолютнуая cсылочка на кубик http</a></li> 
-      <li><a href="https://kubsu.ru/?ysclid=m0usro7hg212314871">абсолютнуая ссылочка2 на кубик https</a></li>
-      <li>
-          <a href="https://www.kubsu.ru/">
-          <img src="image.jpg"width="200">
-        </a>
-      </li>
-      <li><a href="vnutr.html">cокращенная ссылкa на внутреннюю страницу</a></li>
-      <li><a href="index.html">cокращенная ссылкa на главную страницу</a></li>
-      <li><a href="#t1">Ссылк на фрагмент</a></li>
-      <li><a href="https://someshop.ru/catalog/iphone?page=1&perpage=20">Ссылка c 3 параметрами url</a></li>
-      <li><a href="http://site.com/page?id=2">ссылка с параметром id в URL</a></li>
-      <li><a href="page.html">относительная на страницу в текущем каталоге</a></li>
-      <li><a href="/about/page.html">относительная на страницу в каталоге about</a></li>
-      <li><a href="../page.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
-      <li><a href="/../../page.html">относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
-      <li>контекстная в <a href="#">тексте</a> абзаца</li>
-      <li><a href="site.html#bottom">ссылкa на фрагмент страницы стороннего сайта</a></li>
-      <li><img src="image.jpg" width="411" height="146" usemap="#map" alt="Жесть какая-то"></li>
-      <p><map name="map">
-          <area shape="circle" alt="Закладка 1" 
-          coords="110,27, 103,9" 
-          href="2.html">
-        </map></p>
-        <li><a href="">ссылкa с пустым href</a></li>
-        <li><a>ссылкa без href</a></li>
-        <li><a href="http://" rel="nofollow">ссылкa, по которой запрещен переход поисковикам</a></li>
-        <li><a href="http://" rel="noindex">ссылкa, по которой запрещен переход поисковикам</a></li>
-        <li>
-          <ol>
-              <li>title</li>
-              <li>title</li>
-              <li>title</li>
-              <li>title</li>
-          </ol>
-       </li>
-        <li><a href="ftp://user:pass123@site.ru/Temp/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
-      </div>       
-  </ul></section>
-  <section class="form">
-    <form action="" method="get">
-      <p>
-        <label for="name">Введите ФИО:</label>
-        <input type="text" name="name" id="name" required>
-      </p>
-      <p>
-          <label for="tel">Введите телефон:</label>
-          <input type="tel" name="tel" id="tel" required>
-        </p>
-      <p>
-        <label for="email">Введите email:</label>
-        <input type="email" name="email" id="email" required>
-      </p>
-      <p>
-          <label for="date">Введите дату рождения:</label>
-          <input type="date" name="date" id="date" required>
-      </p>
-      <legend>Выберите пол</legend>
-          <label><input type="radio" name="level">МУЖ</label>
-          <label><input type="radio" name="level">notMAN</label>
-          <label><input type="radio" name="level">Круасан</label>
-          <br>
-          <label>
-            Список (listbox с множественным выбором):
-            <br />
-            <select name="field-name-4[]"
-              multiple="multiple">
-              <option value="Значение1">Pascal</option>
-              <option value="Значение2" selected="selected">C</option>
-              <option value="Значение3" selected="selected">C++</option>
-              <option value="Значение1">JavaScript</option>
-              <option value="Значение1">PHP</option>
-              <option value="Значение1">Python</option>
-              <option value="Значение1">Java</option>
-              <option value="Значение1">Haskel</option>
-              <option value="Значение1">Clojure</option>
-              <option value="Значение1">Prolog</option>
-              <option value="Значение1">Scala</option>
-            </select>
-          </label><br />
+    <div calss = "calc">
+        <h1>Калькулятор стоимости заказа</h1>
+        <label for="quantity">Количество товара:</label>
+        <input type="number" id="quantity" min="1" value="1">
 
-          <label>
-            биография:<br />
-            <textarea name="field-name-2">букавки букавки букавки</textarea>
-          </label><br />
-          <label><input type="checkbox" checked="checked"
-            name="check-1" />
-            с контрактом ознакомлен (а)</label><br />
+        <label for="product">Выберите товар:</label>
+        <select id="product">
+            <option value="100">Товар 1 - 100 руб.</option>
+            <option value="200">Товар 2 - 200 руб.</option>
+            <option value="300">Товар 3 - 300 руб.</option>
+        </select>
 
-      <button type="submit">СОХРАНИТЬ</button>
-    </form>
-  </section>
-</main>
+        <button onclick="calculateCost()">Подсчитать стоимость</button>
 
-<footer class="footer">
-    <p>&copy; Криминальный Упырь</p>
-</footer>
+        <p id="result"></p>
+    </div>
+    
+
+    <script>
+        function calculateCost() {
+            // Получаем количество товара
+            const quantity = document.getElementById('quantity').value;
+            // Получаем цену выбранного товара
+            const price = document.getElementById('product').value;
+            // Вычисляем стоимость
+            const totalCost = quantity * price;
+            // Выводим результат
+            document.getElementById('result').textContent = `Стоимость заказа: ${totalCost} руб.`;
+        }
+    </script>
 </body>
 </html>
