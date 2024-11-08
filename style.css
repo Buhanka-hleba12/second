@@ -28,6 +28,11 @@ body {
     margin-right: 30px;
     font-size: large;
 }
+.logo img {
+    width: 6em;
+    height: 6em;
+    border-radius: 1em;
+}
 .header .logo, .header .site-name, .header .nav {
     margin-bottom: 10px;
 }
