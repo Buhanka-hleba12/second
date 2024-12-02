@@ -9,15 +9,26 @@ ul{
     justify-content: space-between;
 }
 
-li{
-    list-style: none;
-    
-    
+
+a{
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    text-decoration: none;
     margin: 5px;
     padding: 5px;
     width: 100vh;
-    text-align: center;
-    background-color: rgb(161, 94, 0);
-    color: aliceblue;
+    height: 5vh;
+    
     border-radius: 15px;
+    background-color: rgb(0, 64, 143);
+
+    color: rgb(255, 250, 250);
+    border: 2px solid #82ffe6;
+
+  
+    transition: 0.3s;
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+a:hover, a:active  {background-color: rgb(0, 49, 108);}
