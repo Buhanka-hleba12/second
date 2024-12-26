@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* Базовые стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Кнопка открытия формы */
+        #open-modal {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Стили модального окна */
+        #modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #form-container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Поля формы */
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        
+        input, textarea, button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Адаптация для мобильных устройств */
+        @media (max-height: 600px) {
+            #form-container {
+                height: 100%;
+                border-radius: 0;
+                overflow-y: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка открытия формы -->
+    <button id="open-modal">Открыть форму</button>
+
+    <!-- Модальное окно с формой -->
+    <div id="modal">
+        <div id="form-container">
+            <form id="contact-form">
+                <label>
+                    ФИО:
+                    <input type="text" name="fullname" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Телефон:
+                    <input type="tel" name="phone" required>
+                </label>
+                <label>
+                    Организация:
+                    <input type="text" name="organization">
+                </label>
+                <label>
+                    Сообщение:
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    Согласен с обработкой персональных данных
+                </label>
+                <button type="submit">Отправить</button>
+                <button type="button" id="close-modal">Закрыть</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script8.js"></script>
+</body>
+</html>
