@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 33.33%;
+            max-width: 33.33%;
+            flex: 1 0 auto;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Навигационные кнопки */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Пейджер */
+        .pager {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .pager-dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .pager-dot.active {
+            background-color: #007bff;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 600px) {
+            .slide {
+                min-width: 100%;
+                max-width: 100%;
+            }
+
+            .pager {
+                position: relative;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <!-- Галерея -->
+        <div class="slider-track">
+            <div class="slide"><img src="1.jpg" alt="Image 1"></div>
+            
+        </div>
+
+        <!-- Навигация -->
+        <button class="arrow left">&larr;</button>
+        <button class="arrow right">&rarr;</button>
+    </div>
+
+    <!-- Пейджер -->
+    <div class="pager"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
